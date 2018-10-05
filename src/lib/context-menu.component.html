@@ -1,0 +1,4 @@
+<div *ngIf="showContextMenu" class="dropdown-menu" [ngClass]="{'context-menu':showContextMenu}" 
+[ngStyle]="{top: offsetTop, left: offsetLeft }">
+  <a href="#" *ngFor="let menuItem of menu" (click)="contextClick(menuItem)" class="dropdown-item">{{ menuItem.name }}</a>
+</div>
